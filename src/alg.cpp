@@ -9,8 +9,7 @@ int cbinsearch(int *arr, int size, int value) {
         int ser = (l + r) / 2;
         if (arr[ser] < value) {
             l = ser + 1;
-        }
-        else {
+        } else {
             r = ser;
         }
     }
@@ -20,7 +19,7 @@ int cbinsearch(int *arr, int size, int value) {
     }
     if (res == 0) {
       return 0; // если ничего не найдено
-    } else{
+    } else {
       return res;
     }
 }
